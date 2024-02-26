@@ -11,7 +11,7 @@ export default function Header() {
         show
           ? " h-full transform delay-500 transition-all overflow-visible ease-in-out"
           : "h-auto transform transition-all delay-500 overflow-hidden ease-in-out"
-      } flex justify-between items-center px-20 py-6 allMobile:items-start allMobile:fixed allMobile:backdrop-blur-xl allMobile:px-4 allMobile:py-2 `}
+      } flex justify-between items-center px-40 py-6 allMobile:items-start allMobile:fixed allMobile:backdrop-blur-xl allMobile:px-4 allMobile:py-2 `}
     >
       <Logo />
       {/* menu dekstop & tab */}
@@ -22,7 +22,9 @@ export default function Header() {
           <li className=" cursor-pointer">Project</li>
           <li className=" cursor-pointer">Contact</li>
         </ul>
-        <button className=" btn">Download CV</button>
+        <button className=" rounded px-4 py-2 font-semibold bg-primer hover:bg-primer/70 text-neutral-700">
+          Download CV
+        </button>
       </div>
       {/* menu mobile */}
       <div className=" allMobile:block allTab:hidden allDekstop:hidden">
@@ -48,7 +50,9 @@ export default function Header() {
           <li className="text-xl flex items-center cursor-pointer hover:font-semibold transform transition-all delay-150 select-none overflow-hidden ">
             Contact
           </li>
-          <button className=" btn allMobile:hidden">Download CV</button>
+          <button className=" rounded px-4 py-2 font-semibold bg-primer hover:bg-primer/70 text-neutral-700 allMobile:hidden">
+            Download CV
+          </button>
         </ul>
       </div>
     </div>

@@ -4,16 +4,43 @@ import Banner from "../../components/organism/banner";
 
 export default function Dashboard() {
   return (
-    <div id="Home" className=" relative min-h-screen overflow-hidden pb-10">
-      <div className=" absolute bg-primarry w-40 h-40 rounded-full blur-2xl bottom-0 -right-20 opacity-40" />
-      <div className=" absolute bg-primarry w-40 h-40 rounded-full blur-3xl bottom-40 -left-32 opacity-30" />
-      <div className=" absolute bg-primarry w-96 h-80 rounded-full blur-2xl -top-32 right-1/2 opacity-10" />
+    <div id="Home" className=" relative min-h-screen overflow-hidden">
+      <div className=" absolute bg-primer w-40 h-40 rounded-full blur-2xl bottom-60 -right-20 opacity-40" />
+      <div className=" absolute bg-primer w-40 h-40 rounded-full blur-3xl bottom-40 -left-32 opacity-30" />
+      <div className=" absolute bg-primer w-96 h-80 rounded-full blur-2xl -top-32 right-1/2 opacity-10" />
       <header className=" relative z-30">
         <Header />
       </header>
-      <section className=" allMobile:mt-24 allMobile:px-6 allDekstop:mt-20 allDekstop:px-40 relative z-10">
+      <section className=" allMobile:mt-16 allMobile:px-6 allDekstop:mt-20 allDekstop:px-40 relative z-10">
         <Banner />
       </section>
+      <div className=" absolute w-screen bottom-0">
+        <svg
+          width="100%"
+          height="100%"
+          id="svg"
+          viewBox="0 0 1440 390"
+          xmlns="http://www.w3.org/2000/svg"
+          className="transition duration-300 ease-in-out delay-150"
+        >
+          <path
+            d="M 0,400 C 0,400 0,133 0,133 C 65.9284252065606,111.30755950178815 131.8568504131212,89.61511900357628 181,85 C 230.1431495868788,80.38488099642372 262.5010235540758,92.84708348748305 311,107 C 359.4989764459242,121.15291651251695 424.1390553705759,136.99654704649157 483,152 C 541.8609446294241,167.00345295350843 594.9427549636207,181.16672832655075 655,182 C 715.0572450363793,182.83327167344925 782.0899247749414,170.33653964730547 829,153 C 875.9100752250586,135.66346035269453 902.6975459366138,113.48711308422742 948,108 C 993.3024540633862,102.51288691577258 1057.119891478604,113.71500801578492 1120,123 C 1182.880108521396,132.28499198421508 1244.8228881489704,139.65285485263288 1298,141 C 1351.1771118510296,142.34714514736712 1395.5885559255148,137.67357257368354 1440,133 C 1440,133 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#ffd527"
+            fill-opacity="0.53"
+            className="transition-all duration-300 ease-in-out delay-150 path-0"
+          ></path>
+          <path
+            d="M 0,400 C 0,400 0,266 0,266 C 46.62192625477864,273.5192502158096 93.24385250955729,281.0385004316192 146,279 C 198.75614749044271,276.9614995683808 257.64651621654946,265.3652484893328 316,259 C 374.35348378345054,252.63475151066717 432.17008262424486,251.5005056110495 492,268 C 551.8299173757551,284.4994943889505 613.6731532864717,318.6327290664693 666,312 C 718.3268467135283,305.3672709335307 761.1373042298682,257.96857812307314 812,257 C 862.8626957701318,256.03142187692686 921.777629794056,301.49295844123816 966,308 C 1010.222370205944,314.50704155876184 1039.7521765939082,282.05958811197434 1096,263 C 1152.2478234060918,243.94041188802564 1235.213663830312,238.26868911086447 1297,241 C 1358.786336169688,243.73131088913553 1399.393168084844,254.86565544456778 1440,266 C 1440,266 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#ffd527"
+            fill-opacity="1"
+            className="transition-all duration-300 ease-in-out delay-150 path-1"
+          ></path>
+        </svg>
+      </div>
     </div>
   );
 }
